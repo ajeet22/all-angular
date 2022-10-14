@@ -1,0 +1,9 @@
+<h1>View User Details!!!</h1>
+<h3 *ngIf="userDetails">
+  <p>Name: {{userDetails.name}}</p> 
+  <p>Email: {{userDetails.email}}</p>
+  <p>Street: {{userDetails.address.street}}</p>
+  <p>City: {{userDetails.address.city}}</p>
+  <p>Zip Code: {{userDetails.address.zipcode}}</p> 
+</h3>
+<a routerLink="/list">Users List</a> 

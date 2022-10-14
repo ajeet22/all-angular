@@ -1,0 +1,23 @@
+a{
+    padding-left: 20px;
+}
+table{
+    border-collapse: collapse;
+    margin-left: 30%;
+}
+th, td{
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 15px;
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+}
+
+td:nth-child(1){
+    background-color: aqua;
+}
+td:nth-child(2){
+    background-color: yellowgreen;
+}

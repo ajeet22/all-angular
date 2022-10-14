@@ -1,0 +1,8 @@
+<h1>Edit User!!!</h1>
+<div *ngIf="dataLoaded">
+    <form [formGroup]="editFormGroup" (submit)="updateUser()">
+        <input type="text"  formControlName="name"><br>
+        <input type="text"  formControlName="email"><br><br>
+        <input type="submit" value="Edit User" >
+    </form>
+</div>

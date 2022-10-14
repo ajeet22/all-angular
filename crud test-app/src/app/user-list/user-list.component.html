@@ -1,0 +1,14 @@
+<h1>Users List!!</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let user of listUser">
+        <td>{{user.name}}</td>
+        <td>
+             <a [routerLink]="['view', user.id]">View</a> 
+            <a [routerLink]="['edit', user.id]">Edit</a>   
+            <a [routerLink]="['delete', user.id]">Delete</a> </td>
+    </tr>
+</table>

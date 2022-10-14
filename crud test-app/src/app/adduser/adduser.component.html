@@ -1,0 +1,7 @@
+<h1>Add User !!!</h1>
+<form [formGroup]="addUserForm" (submit)="createUser()" ngNativeValidate>
+    <input type="text" placeholder="Enter User Name" formControlName="username" required><br>
+    <input type="text" placeholder="Enter User Email" formControlName="email" required><br>
+    <input type="text" placeholder="Enter User Phone Number" min="10" formControlName="phone" required><br>
+    <input type="submit" value="Add User" >
+</form>
