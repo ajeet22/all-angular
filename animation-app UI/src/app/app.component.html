@@ -1,0 +1,41 @@
+<h1>Welcome To Angualr Animation Demo</h1>
+
+<nav>
+  <ul>
+    <li><a routerLink="#">ANGULAR</a></li>
+    <li><a routerLink="#">FEATURES</a></li>
+    <li><a routerLink="#">DOCS</a></li>
+    <li><a routerLink="#">RESOURCES</a></li>
+    <li><a routerLink="#">EVENTS</a></li>
+    <li><a routerLink="#">BLOG</a></li>
+  </ul>
+</nav>
+<p [@myAnimation]='state' (click)='animateMe()'>I will animate</p>
+
+<div>
+  <div style="width: 50%;" id="div1">
+  <img src="./assets/Ajit.jpg" style="width: 400px; height:400px;">
+  <h2>Name:Ajit Kumar</h2>
+  </div>
+  <div style="width: 50%;" id="div2">
+  <form method="get">
+    <table>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" placeholder="Enter Your Name"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" placeholder="Enter Your Email"></td>
+      </tr>
+      <tr>
+        <td>Contact</td>
+        <td><input type="tel" name="cont" placeholder="Enter Your Mobile Number"></td>
+      </tr>
+      <tr><td><input type="button" value="Submit"/></td></tr>
+    </table>
+    
+  </form>
+  </div>
+</div>
+<div id="fter"><p>Footer</p></div>
