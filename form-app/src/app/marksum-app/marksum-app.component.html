@@ -1,0 +1,17 @@
+<h1>Marks of Maths, Science & English</h1>
+<form #student="ngForm" (ngSubmit)="onClickSubmit(student.value)" ngNativeValidate>
+    <input type="number" name="math" min="0" max="100" placeholder="Enter math's marks" ngModel><br>
+    <input type="number" name="science" min="0" max="100" placeholder="Enter Science marks" ngModel><br>
+    <input type="number" name="english" min="0" max="100" placeholder="Enter English marks" ngModel><br>
+    <br>
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button type="reset" mat-raised-button color="accent">Reset</button>
+</form>
+<br>
+<div id="details">
+    <p>Maths Marks: {{math}}</p>
+    <p>Science Marks: {{science}}</p>
+    <p>English Marks: {{english}}</p>
+    <h3 style="color: green;">Total marks: {{sum}}</h3>
+    <h3 style="color: rgb(128, 0, 75);">Average marks: {{avg}}</h3>
+</div>

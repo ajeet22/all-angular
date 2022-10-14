@@ -1,0 +1,12 @@
+nav{
+    text-align: center;
+    margin-left: 3%;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+button{
+    margin: 10px;
+    font-size: 20px;
+}

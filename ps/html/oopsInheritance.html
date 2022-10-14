@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Person(){
+
+            }
+            Person.prototype.walk=function(){
+                alert("Walking of Person");
+            }
+            Person.prototype.sayHello=function(){
+                alert("Say Hello to Person");
+            }
+        // child class
+            function Student(){
+                Person.call(this); // calls the parent constructor
+            }
+            Student.prototype = new Person(); // inherits Person
+
+            //correct the constructor ponter to point to Student because it points to Person
+            Student.prototype.constructor=Student;
+
+            //override the sayHello()
+            Student.prototype.sayHello=function(){
+                alert("Say Hello to students");
+            };
+
+        Student.prototype.sayBye=function(){
+            alert("Say Bye to Students");
+        };
+
+        var student1 = new Student();
+        student1.sayHello();
+        student1.walk();
+        student1.sayBye();
+        </script>
+    </head>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphics/Canvas</title>
+    </head>
+    <body>
+        <canvas id="canvas" width="450" height="400" style="border: 1px solid blue;"></canvas>
+    </body>
+    <script>
+        var cvar = document.getElementById("canvas");
+        var context = cvar.getContext("2d");
+        context.fillStyle="hotpink";
+        context.fillRect(5,20,250,80);
+    </script>
+</html>

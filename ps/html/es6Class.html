@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           
+            class Employee
+            {
+                constructor(empid, empname, empyoj){
+                    this.empid=empid;
+                    this.empname=empname;
+                    this.empyoj=empyoj;
+               }
+               display(){
+                alert("Employee ID: "+this.empid+" Employee Name: "+this.empname+" Employee Year Of Joining: "+this.empyoj);
+               }
+               static sayYes(){
+                alert("Say Yes to static methods");
+               }
+            }
+            emp1 = new Employee("E234", "Steve", 2021);
+            emp1.display();
+            Employee.sayYes();
+        </script>
+    </head>
+</html>

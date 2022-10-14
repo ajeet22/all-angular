@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Js</title>
+    </head>
+    <body>
+       <input type="text" id="fjs">
+       <input type="button" onclick="display()" value="Submit">
+       <input type="button" onclick="clearInput()" value="Reset"><br><br>
+    
+       <table>
+        <tr>
+            <td>Name: </td>
+            <td><p id="h12" style="color: red;">Default</p></td>
+        </tr>
+       </table>
+
+       <script>
+        function display(){
+            var p= document.getElementById("fjs").value;
+            document.getElementById("h12").innerHTML=p;
+            console.log(p);  
+        }
+
+        function clearInput(){
+            document.getElementById("fjs").value="";
+        }
+       </script>
+    </body>
+</html>

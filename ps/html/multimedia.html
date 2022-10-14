@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Multimedia</title>
+
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Video/Audio Player</h1>
+        <div style="text-align: center;">
+            <audio src="audio/Chandni O Meri Chandni - DJ Alvee Remix.mp3" controls type="audio/mpeg">Sorry Audio not supported in this browser</audio><br>
+            <button onclick="playpause()">Play/Pause</button>
+            <button onclick="small()">Small</button>
+            <button onclick="big()">Big</button>
+            <button onclick="normal()">Normal</button><br> 
+            <video src="video/Video (1).mp4" id="vid1" poster="image/bimage2.jpg" controls width="480px">Video is not supported in this browser</video>
+        </div>
+
+    </body>
+    <script>
+        var myvideo=document.getElementById("vid1");
+        function playpause(){
+            if(myvideo.paused){
+                myvideo.play();
+            }
+            else{
+                myvideo.pause();
+            }
+        }
+        function small(){
+            myvideo.width=420;
+        }
+        function big(){
+            myvideo.width=600;
+        }
+        function normal(){
+            myvideo.width=480;
+        }
+    </script>
+</html>

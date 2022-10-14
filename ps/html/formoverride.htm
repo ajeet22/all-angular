@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form override</title>
+    </head>
+    <body>
+        <form action="formvalidation.html" method="get">
+            Email:<input type="text" name="formvalidate">
+            <input type="text" pattern="[0-9]{6}" name="pincode" placeholder="Enter pincode must be 6 digit">
+            <input type="submit" value="User">
+            <input type="submit" formaction="formoverride.htm" value="Form Override">
+        </form>
+    </body>
+</html>

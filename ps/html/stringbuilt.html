@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        #tm{
+            text-align: center;
+            background-color: aqua;
+            border: 5px solid red;
+            border-radius: 5px;
+        }
+      </style>  
+    </head>
+    <body>
+        <h1 id="tm"></h1>
+    </body>
+    <script>
+        function display(){
+         var d = document.getElementById("tm");
+         d.innerHTML= new Date();   
+        }
+        setInterval(display, 1000);
+    </script>
+</html>

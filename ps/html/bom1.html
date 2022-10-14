@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function goBack(){
+                window.history.back();
+            }
+            var c=0;
+            function counter(){
+                c = c+2;
+                document.getElementById("ct").innerHTML="Count: "+c;
+            }
+            function clearCount(){
+                var cd = document.getElementById("ct");
+                c=0;
+                cd.innerHTML="Count: "+c;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>BOM history</h1>
+        <input type="button" value="back" onclick="goBack();" />
+        <h1 id="ct"></h1>
+        <button onclick="counter();">Count</button>
+        <button onclick="clearCount();"> Clear</button>
+        <!--<script>
+            document.write(window.location.href);
+            document.write("<br>");
+            document.write(window.location.hostname);
+            document.write("<br>");
+            document.write(window.location.protocol);
+        </script> -->
+    </body>
+</html>

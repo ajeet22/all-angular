@@ -1,0 +1,14 @@
+<h2 style="color: green;">Model Driven Form!!!</h2>
+<div>
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+        <input type="text" class="fortextbox" name="emailid" placeholder="Enter email" formControlName="emailid"><br><br>
+        <input type="password" class="fortextbox" name="password" placeholder="Enter password" formControlName="password"><br><br>
+        <input type="date" class="fortextbox" name="dob" placeholder="Enter date" formControlName="dob"><br><br>
+        <!--<input mat-button color="primary" type="submit" class="forsubmit" [disabled]="!formdata.valid" value="Submit">-->
+        <button type="submit" mat-raised-button color="primary" class="forsubmit" [disabled]="!formdata.valid">Submit</button>
+    </form>
+</div>
+<br>
+<p>Email ID: {{emailid}}</p>
+<p>Password: {{password}}</p>
+<p>Date of Birth: {{dob}}</p>

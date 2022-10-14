@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #para{
+                color: teal;
+                background-color: pink;
+                height: 80px;
+                width: 450px;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body onload="findDimension();" onresize="findDimension();">
+        <p id="para"></p>
+        <button onclick="openWindow();">Open a new window</button>
+        <button onclick="closeWindow();">Close</button>
+        <script>
+            function findDimension(){
+                var w = window.innerWidth
+               // || document.documentElement.clientWidth
+                //|| document.body.clientWidth; // all 3 work same
+
+                var h = window.innerHeight
+                // || document.documentElement.clientHeight
+                // || document.body.clientHeight;
+
+                var x = document.getElementById("para");
+                x.innerHTML = "Browser inner window width: "+w+", height: "+h;
+            }
+            function openWindow(){
+                mywindow = window.open('https://www.google.com','mywindow','width=400px, height=400px');
+            }
+            function closeWindow(){
+                mywindow.close();
+            }
+        </script>
+    </body>
+</html>

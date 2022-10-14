@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function showLocation(position){
+                var lt = position.coords.latitude;
+                var lg = position.coords.longitude;
+                alert("Latitude: "+lt+" Longitude: "+lg);
+            }
+            function getLocation(){
+                alert("GL");
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showLocation);
+                }else{
+                    alert("Sorry, Browser not support GL");
+                }  
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="getLocation();">Get Location</button>
+    </body>
+</html>

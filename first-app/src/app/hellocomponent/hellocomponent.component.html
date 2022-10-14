@@ -1,0 +1,36 @@
+<h1>Hello Component works!</h1>
+<h2>{{title}}</h2>
+<h2>{{todayDate}}</h2>
+<h1>{{todayDate | date:"dd/MM/yyyy"}}</h1>
+<h2>{{todayDate | date:"dd-MM-yy"}}</h2>
+<p>{{100 | currency}}</p>
+<p>{{100 | currency:'EUR':'symbol'}}</p>
+<p>{{100 | currency:'EUR':'code'}}</p>
+<p>{{234.648941486 | number:'3.2-3'}}</p>
+<h1>{{num | slice:1:4}}</h1>
+<h1>{{'this is a string' | slice:1:9}}</h1>
+<p>{{0.23 | percent}}</p>
+<p>{{"Some sentence here" | titlecase}}</p>
+<p>{{[3,5,1,2,4,6,7,8,9] | odd}}</p>
+<div>
+<p *ngFor="let a of num">{{a}}</p>
+</div>
+{{employees}}<br>
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let employee of employees'>
+                <td>{{employee["empId"]}}</td>
+                <td>{{employee["name"]}}</td>
+                <td>{{employee["location"] | uppercase}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

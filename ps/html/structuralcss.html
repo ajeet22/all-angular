@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            tr:nth-child(even){background-color: orange;}
+            tr:nth-child(odd){background-color: brown;}
+            #span1 > p:nth-child(3),P:nth-child(2){background-color: pink;}
+            table{background-clip: content-box;
+                background-image: url(./image/bimage2.jpg);
+            background-color: chartreuse;}
+
+
+
+            div{ background-image: -webkit-gradient(
+                linear,
+                left top,
+                right bottom,
+                color-stop(0.25,cyan),
+                color-stop(0.50, yellow),
+                color-stop(0.75, red),
+                color-stop(1, pink)
+            );
+            }
+            div{
+                background: -webkit-radial-gradient(circle, red 25%, yellow 50%, green 25%);
+            }
+     </style>
+    </head>
+    <body>
+        <table>
+            <tr><td>Cell-1</td></tr>
+            <tr><td>Cell-2</td></tr>
+            <tr><td>Cell-3</td></tr>
+            <tr><td>Cell-4</td></tr>
+            <tr><td>Cell-5</td></tr>
+            <tr><td>Cell-6</td></tr>
+        </table>
+        <span id="span1">
+            <p>This is Para-1</p>
+            <p>This is Para-2</p>
+            <p>This is Para-3</p>
+            <p>This is Para-4</p>
+        </span>
+        <div>
+            <p>This is Para-1</p>
+            <p>This is Para-2</p>
+            <p>This is Para-3</p>
+            <p>This is Para-4</p>
+        </div>
+    </body>
+</html>

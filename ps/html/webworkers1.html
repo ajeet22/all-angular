@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            if(window.Worker){
+                alert("Congratulation !! you have workers support");
+                var worker = new Worker('bigloop.js');
+                worker.onmessage = function(event){
+                    alert("Completed "+event.data+" iteration");
+                };
+
+                worker.onerror = function(event){
+                    console.log(event.message, event);
+                };
+            }else{
+                alert("Sorry!! Not worker support");
+            }
+
+            function sayHello(){
+                alert("Hello Sir....");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="sayHello();">Say Hello</button>
+    </body>
+</html>

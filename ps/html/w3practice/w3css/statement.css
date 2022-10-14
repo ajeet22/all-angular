@@ -1,0 +1,9 @@
+div{
+    margin: auto;
+    width: 400px;
+    margin-bottom: 10px;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+    text-align: center;
+}
+h1{color: blueviolet;}

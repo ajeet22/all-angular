@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let myPromise = new Promise(function (myResolve, myReject) {
+            setTimeout(function () { myReject("Got Error"); }, 3000);
+        });
+        myPromise.then(
+            function (value) {
+                document.getElementById("demo").innerHTML = value;
+            },
+            function (value) {
+                document.getElementById("demo1").innerHTML = value;
+            }
+        );
+
+    </script>
+</head>
+
+<body>
+    <div id="demo" style="background-color: green;color:white;width:500px;height:100px;"></div>
+    <div id="demo1" style="background-color: red;color:white;width:500px;height:100px;"></div>
+</body>
+
+</html>

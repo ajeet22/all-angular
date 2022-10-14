@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function add(...nums){
+                alert(Array.isArray(nums));
+                let sum=0;
+                for(x of nums){
+                    sum = sum + parseFloat(x);
+                }
+                return sum;
+            }
+            document.write(add(10,20));
+            document.write("<br>"+add(10,20,34,67,78,99,2));
+        </script>
+    </head>
+</html>

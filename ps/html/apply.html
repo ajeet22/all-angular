@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var actor = {
+                fullName: function(){
+                    return this.firstName+" "+this.lastName;
+                }
+            }
+            var actor1={
+                firstName:"Tom",
+                lastName:"Cruise",
+            }
+            var actress1={
+                firstName:"Nicole",
+                lastName:"Kim",
+            }
+            document.write(actor.fullName.apply(actor1)+"<br>");
+            document.write(actor.fullName.apply(actress1));
+        </script>
+    </body>
+</html>

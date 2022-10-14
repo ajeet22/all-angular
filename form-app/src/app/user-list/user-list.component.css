@@ -1,0 +1,18 @@
+#userform{
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+}
+#userlist{
+    width: 49%;
+    float: right;
+    margin-top: 0px;
+}
+table{
+    border-collapse: collapse;
+}
+
+tr, th, td{
+    border: 1px solid;
+    width: 150px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Outline</title>
+        <style>
+            div{
+                background-color: aquamarine;
+                outline: 5px dotted;
+                margin:auto;
+                width: 600px;
+                height: 90px;
+                padding: 10px;
+                overflow-x: scroll;
+
+            }
+            h1{
+                text-align: center;
+                color: red;
+                position: relative;
+                text-transform: uppercase;
+                z-index: 1;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            }
+            p{
+                text-transform: capitalize;
+                text-indent: 40px;
+                font-style: italic;
+                font-weight: 40px;
+                z-index: 0;
+                font-variant: small-caps;
+            }
+            a:hover{
+                text-decoration: none;
+                color: brown;
+                background-color: rgb(255, 0, 119);
+
+            }
+            .secd:hover{
+                background-color: rgb(185, 219, 30);
+            }
+            a:visited{
+                color: deeppink;
+            }
+            .secd{
+                margin-top: 30px;
+            }
+            ul{
+                list-style-type: square;
+            }
+            li{
+                display: inline;
+            }
+            ol{
+                list-style-type: upper-roman;
+            }
+            table,th,td{
+                border: 5px solid red;
+                border-collapse: collapse;
+            }
+            td{
+                text-align: right;
+            }
+            th{
+                background-color: burlywood;
+            }
+            strong{
+                display: block;
+            }
+            div p{
+                color: gold;
+            }
+            div + p{
+                color: rgb(0, 255, 128);
+            }
+            p:first-child{
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>This is outline heading</h1>
+            <p>Here we will <strong>write outline paragraph</strong> the user interface must be more attractive so that customer spend much more time and trafic on the page will be increased.</p>
+            <a href="#">Click Me</a>
+            <a href="#">Click</a>
+            
+        </div>
+        <div class="secd">
+            <ul>
+                <li>A</li>
+                <li>B</li>
+            </ul>
+            <br>
+            <ol>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+            </ol>
+        </div>
+        <div class="secd">
+            <table style="width: 100%;">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tr>
+                    <td>Ajit</td>
+                    <td>Kumar</td>
+                </tr>
+                <tr>
+                    <td>Asish</td>
+                    <td>Agrwal</td>
+                </tr>
+                <tr>
+                    <td>Pradeep</td>
+                    <td>Sangwan</td>
+                </tr>
+            </table>
+
+        </div>
+        <p>Outside div element</p>
+        
+    </body>
+</html>

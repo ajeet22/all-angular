@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p[id="fish"]{background-color: red;}
+            p[id^="ara"]{background-color: greenyellow;}
+            p[id*="art"]{background-color: yellow;}
+            p[id$="ph"]{background-color: coral;}
+
+            input[type="text"]{display: none;}
+        </style>
+    </head>
+    <body>
+       <p id="fish">Fish para</p>
+       <p id="ara">id atart with ara</p>
+       <p id="art">para whose id contains art</p>
+       <p id="ph">para whose id ends with ph</p>
+       <form>
+        Name:<input type="text" name="name"><br>
+        Email:<input type="email" name="email"><br>
+        <input type="submit" value="Submit">
+       </form>
+    </body>
+</html>

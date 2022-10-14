@@ -1,0 +1,23 @@
+<h1>Angular Forms App</h1>
+<!--
+<form #userReg="ngForm" (ngSubmit)="onClickSubmit(userReg.value)">
+  <input type="email" name="emailid" placeholder="Enter Email" ngModel /><br>
+  <input type="password" name="password" placeholder="Enter Password" ngModel /><br>
+  <input type="date" name="dob" placeholder="Enter Date" ngModel /><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form #userReg="ngForm" (ngSubmit)="onClickSubmit(userReg.value)" ngNativeValidate>
+  <input type="email" name="emailid" placeholder="Enter Email" required ngModel /><br>
+  <input type="password" name="password" placeholder="Enter Password" required ngModel /><br>
+  <input type="date" name="dob" placeholder="Enter Date" required ngModel /><br>
+  <input type="submit" value="Submit">
+</form>-->
+
+<a routerLink="student" mat-raised-button color="accent">Student Dashboard</a>
+<a routerLink="employee" mat-raised-button color="primary">Employee Details</a>
+<a routerLink="material" mat-raised-button color="accent">Angular Material</a>
+<a routerLink="user" mat-raised-button color="warn">User List</a>
+<hr>
+<router-outlet></router-outlet>
+<hr>

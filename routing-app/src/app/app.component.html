@@ -1,0 +1,14 @@
+<h1 style="text-align: center; color:red;">Routing Application {{name}}</h1>
+<nav>
+  <button>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> About</a>
+  </button>
+  <button>
+    <a routerLink="employees" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> Employees</a>
+  </button>
+  <button>
+    <a routerLink="career" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> Career</a>
+  </button>
+</nav>
+
+<router-outlet></router-outlet>

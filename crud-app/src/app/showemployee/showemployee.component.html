@@ -1,0 +1,29 @@
+<h1>Employees Details</h1>
+<div>
+    <form #user="ngForm" (ngSubmit)="save(user.value)">
+        <input type="number" name="id" placeholder="Enter id" ngModel><br>
+        <input type="text" name="fname" placeholder="Enter First Name" ngModel><br>
+        <input type="text" name="lname" placeholder="Enter Last Name" ngModel><br>
+        <input type="email" name="email" placeholder="Enter Email" ngModel><br>
+        <input type="text" name="address" placeholder="Enter Address" ngModel><br>
+        <input type="submit" value="Add Employee">
+    </form>
+</div>
+<div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+        <tr *ngFor="let a of employees">
+            <td>{{a.id}}</td>
+            <td>{{a.fname}}</td>
+            <td>{{a.lname}}</td>
+            <td> {{a.email}}</td>
+            <td>{{a.address}}</td>
+        </tr>
+    </table>
+</div>

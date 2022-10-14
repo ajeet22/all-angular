@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "fname": "Ajit",
+      "lname": "Kumar",
+      "email": "aj@gmail.com",
+      "address": "Siwan, Bihar, 841203"
+    },
+    {
+      "id": 2,
+      "fname": "Jit",
+      "lname": "Kumar",
+      "email": "jee@gmail.com",
+      "address": "Patna, Bihar, 401203"
+    },
+    {
+      "id": 3,
+      "fname": "Ram",
+      "lname": "Singh",
+      "email": "ram@gmail.com",
+      "address": "Lucknow, Uttar Pradesh, 120003"
+    }
+  ]

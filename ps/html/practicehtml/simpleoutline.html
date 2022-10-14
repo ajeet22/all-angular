@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Opacity</title>
+    <style>
+        body{
+            background-image:url("image/bimage3.jpg");
+        }
+        div{
+            border: 2px solid rgb(148, 7, 7);
+            width: 400px;
+            height: 215px;
+            background-color: burlywood;
+            margin: auto;
+            border-radius: 10px;
+        }
+        input:focus{
+            background-color: rgb(243, 184, 221);
+        }
+        input{
+            margin: 10px;
+
+        }
+        span{
+            margin-left: 20px;
+        }
+        h2{
+            text-align: center;
+            color:firebrick;
+        }
+        h1{
+            background-color: azure;
+            width: 440px;
+            margin: auto;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        table{
+            margin: auto;
+        }
+        .secd{
+            background-color: hsl(165, 100%, 60%);
+            background:linear-gradient(white, rgb(179, 255, 0));
+            margin-top: 10px;
+        }
+        .intro::first-line{
+            color: red;
+        }
+        .intro{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Practice Set, Please login first.</h1>
+    <div>
+        <form method="get">
+            <h2>Login Here!!</h2>
+           
+            <table>
+                <tr>
+                    <td><span>First Name</span></td>
+                    <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><span>Age</span></td>
+                    <td><input type="number" name="age" id="age"></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="Submit" onclick="display()">
+                    <input type="button" value="Reset" onclick="clearScreen()"></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+    <div class="secd">
+        <h2 id="sname">default_name</h2>
+        <h2 id="sage"></h2>
+        <p class="intro">first paragraph and first line
+            this is another line of the same paragraph.
+            but the css style affect according to the width of given second div element, it is not depend on how it has been written in the editor.
+        </p>
+    </div>
+    <script>
+        function display(){
+            var n = document.getElementById("fname").value;
+            console.log(n);
+            var ag = document.getElementById("age").value;
+            console.log(ag);
+            document.getElementById("sname").innerHTML=n;
+            document.getElementById("sage").innerHTML=ag;
+        }
+        function clearScreen(){
+            document.getElementById("fname").value="";
+            document.getElementById("age").value="";
+        }
+    </script>
+</body>
+
+</html>

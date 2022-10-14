@@ -1,0 +1,11 @@
+<h1> Sending Data from App component to <b>Inner Component</b></h1>
+
+<hr>
+<h2>Addition Table</h2>
+<form #sumt='ngForm' (ngSubmit)='onSum(sumt.value)'>
+  <input type="number" name="n1" placeholder="Enter n1" ngModel><br><br>
+  <input type="number" name="n2" placeholder="Enter n2" ngModel><br><br>
+  <input type="submit" value="Submit">
+</form>
+<hr>
+<app-inner otitle="{{title}}" nn1="{{n1}}" nn2="{{n2}}" sum1="{{sum}}"></app-inner>

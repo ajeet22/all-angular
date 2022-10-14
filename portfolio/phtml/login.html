@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    div{
+      margin: auto;
+      width: 27%;
+      margin-top: 12%;
+      margin-left: 40%;
+      font-size: 27px;
+      background-color: rgb(151, 189, 151);
+      border-radius: 5px;
+    }
+    div h2{
+      color: brown;
+      text-align: center;
+    }
+    body{
+      background-color: rgb(122, 184, 122);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>Login Here!!</h2>
+    <form action="/portfolio/phtml/home.html" method="get" name="myform" onsubmit="return validform()">
+      <table>
+        <tr>
+          <td>Email </td>
+          <td><input type="email" name="email" id="email1" placeholder="Enter email"></td>
+        </tr>
+        <tr>
+          <td>Password </td>
+          <td><input type="password" name="password" id="password1" placeholder="Password"></td>
+        </tr>
+      </table>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+<script>
+  function validform() {
+    var name = document.myform.email.value;
+    var password = document.myform.password.value;
+    if (name == 'aj@gmail.com') {
+      return true;
+    } else {
+      if (password.length < 8) {
+        alert("Password cannot be blank or not less then 8 characters.");
+        return false;
+      }
+      alert("Check your email id and login again.")
+      return false;
+    }
+  }
+</script>
+
+</html>

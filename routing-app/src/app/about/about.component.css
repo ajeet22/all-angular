@@ -1,0 +1,19 @@
+h1{
+    background-color: aqua;
+}
+ul, li{
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+}
+td, th{
+    border: 2px solid rgb(17, 192, 55);
+    padding: 4px;
+}
+th{
+    padding-top: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin-left: 38%;
+}

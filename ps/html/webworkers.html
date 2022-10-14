@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function bigLoop(){
+                for(var i=0; i<= 1000000000000; i++){
+                    var j = i;
+                }
+                alert("Total Count: "+j);
+            }
+            function sayHello(){
+                alert("Say Hello");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="bigLoop();">Big Loop</button>
+        <button onclick="sayHello();">Say Hello</button>
+    </body>
+</html>

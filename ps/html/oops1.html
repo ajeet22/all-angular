@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Person(gender){
+                this.gender=gender;
+                alert('Person Instantiated');
+            }
+            Person.prototype.sayHello=function(){
+                alert(this.gender);
+            }
+
+            var person1 = new Person('Male');
+            var person2 = new Person('Female');
+
+            alert("Person1 gender: "+person1.gender);
+            document.write("Person2 gender:"+person2.gender);
+            person1.sayHello();
+            person2.sayHello();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

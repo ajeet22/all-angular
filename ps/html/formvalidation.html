@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+    <script type="text/javascript">
+        function changecolor() {
+
+            //document.bgColor = colr.value;
+            //document.getElementById("button").style.backgroundColor=colr.value;
+            document.bgColor=document.getElementById("colr").value;
+        }
+    </script>
+</head>
+
+<body>
+   <!-- <form autocomplete="on">
+         <input type="email" name="name" placeholder="Enter Your Email" autofocus required ><br>
+            <input type="range" name="rg"><br>
+            <input type="month" name="date"  min="2021-12" max="2022-01"><br>
+            <input type="week" name="week" min="2022-W03" max="2022-W07"> 
+            <input type="time" name="time" min="11:30" max="18:30"  required>
+            <input type="datetime-local" required min="2022-04-16T13:00:00" max="2022-05-16T13:00:00">
+            <input type="search" name="sch"><br>
+            URL: <input type="text" list="url_list" name="url" />
+            <datalist id="url_list">
+                <option label="gmail" value="http://www.gmail.com"/>
+                <option label="tweeter" value="http://www.tweeter.com"/>
+
+            </datalist>
+            <input type="submit" value="Submit">
+
+    </form>
+    <input type="color" id="colr">
+    <button onclick="changecolor();" id="button">Click me</button> -->
+
+    <form method="get" id="user_form">
+        First_name: <input type="text" name="fname">
+        <input type="submit">
+    </form>
+    Last Name: <input type="text" name="lname" form="user_form">
+    <form method="get" id="user_form2">
+        Qualification:<input type="text" name="qua" form="user_form">
+        <input type="submit" value="Get Data">
+
+    </form>
+</body>
+
+</html>

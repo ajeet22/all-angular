@@ -1,0 +1,21 @@
+<h1>Filter App</h1>
+<p>param1 is input and param2 is additional argument.</p>
+<label>employee Search</label>
+<input type="text" [(ngModel)]="nameFilter" /><br><br>
+<table border="1">
+
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Location</th>
+    </tr>
+
+    <tr *ngFor='let employee of employees | employeeFilter: nameFilter'>
+        <td>{{employee.empId}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.location | uppercase}}</td>
+    </tr>
+
+</table>
+<br><br>
+<app-filterc></app-filterc>
